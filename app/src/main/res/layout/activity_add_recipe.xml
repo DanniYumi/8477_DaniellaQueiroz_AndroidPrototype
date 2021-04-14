@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#025659"
+    tools:context=".AddRecipe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1000dp">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <EditText
+            android:id="@+id/RecipeEditTextText"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:background="#053133"
+            android:backgroundTint="#7E003639"
+            android:ems="10"
+            android:fontFamily="@font/candal"
+            android:hint=" Recipes Name"
+            android:inputType="textPersonName"
+            android:textColorHint="#FF5722"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:background="#0000BCD4"
+            android:fontFamily="@font/candal"
+            android:includeFontPadding="true"
+            android:text="   Add your Recipes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FF5722"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/IngredientsEditTextText"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:background="#7E003639"
+            android:ems="10"
+            android:fontFamily="@font/candal"
+            android:hint=" Ingredients"
+            android:inputType="textPersonName"
+            android:textColor="#00BCD4"
+            android:textColorHint="#FF5722"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeEditTextText" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/candal"
+            android:text="Update"
+            android:textColor="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/DeleteeditTextText" />
+
+        <Button
+            android:id="@+id/viewAllButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/candal"
+            android:text="View All"
+            android:textColor="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/ClearButton" />
+
+        <Button
+            android:id="@+id/ClearButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/candal"
+            android:text="Clear"
+            android:textColor="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/candal"
+            android:text="ADD"
+            android:textColor="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/DurationEditTextNumber" />
+
+        <EditText
+            android:id="@+id/DurationEditTextNumber"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="32dp"
+            android:background="#7E003639"
+            android:ems="10"
+            android:fontFamily="@font/candal"
+            android:hint="Time Needed"
+            android:inputType="number"
+            android:textColorHint="#FF5722"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/IngredientsEditTextText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/candal"
+            android:text="Duration:"
+            android:textColor="#FF5722"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/DurationEditTextNumber"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/DurationEditTextNumber"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/DeleteeditTextText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#2FD4DD"
+            android:backgroundTint="#7E003639"
+            android:ems="10"
+            android:fontFamily="@font/candal"
+            android:hint="If you are deleting or updating insert the ID"
+            android:inputType="textPersonName"
+            android:textColor="#FF5722"
+            android:textColorHint="#FF5722"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/viewAllButton" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="301dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/candal"
+            android:text="Delete"
+            android:textColor="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/updateButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
